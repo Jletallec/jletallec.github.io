@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Redirection réussie !</h1>
+    <p>Vous avez été redirigé correctement après l'authentification.</p>
+    <script>
+        // Vous pouvez capturer les paramètres de l'URL ici
+        const params = new URLSearchParams(window.location.search);
+        console.log("Code OAuth reçu :", params.get("code"));
+    </script>
+</body>
+</html>
